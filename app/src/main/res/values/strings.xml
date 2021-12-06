@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name"></string>
+    <string name="userName">Иванов Иван Иванович</string>
+    <string name="emailAdress">info@gmail.com</string>
+    <string name="title">Профиль</string>
+    <string name="status"> Cтатус:учащийся</string>
+    <string name="birthday">Дата рождения:дд.мм.гггг</string>
+    <string name="citizenship">Гражданство:РФ</string>
+    <string name="userID">ID пользователя:11111</string>
+
+</resources>
