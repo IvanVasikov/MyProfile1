@@ -8,4 +8,7 @@
     <color name="border_color">#707C9780</color>
     <color name="grey">#979797</color>
     <color name="blue">#9A023470</color>
+    <color name="textbox_border_color">#F5F5F5</color>
+    <color name="textbox_shadow">#80F5F5F5</color>
+    <color name="filled_textbox">#E8F0FE</color>
 </resources>
