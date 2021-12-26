@@ -113,6 +113,56 @@ class MainActivity : AppCompatActivity() {
                 }
             }
         }.attach()
+        val passwordButton = findViewById<View>(R.id.password_button)  as ImageButton
+        passwordButton.isClickable=false
+        passwordButton.isEnabled=false
+        val text4 = findViewById<View>(R.id.password) as EditText
+        text4.addTextChangedListener(object : TextWatcher {
+            override fun beforeTextChanged(s: CharSequence, start: Int, count: Int, after: Int) {}
+            override fun onTextChanged(s: CharSequence, start: Int, before: Int, count: Int) {}
+            override fun afterTextChanged(s: Editable) {
+                if (!text4.getText().toString().equals("")) {
+                    text4.setBackgroundResource(R.drawable.filled_text_box)
+                    passwordButton.setImageResource(R.drawable.save_button_active)
+                    passwordButton.isClickable = true
+                    passwordButton.isEnabled=true
+                }
+            }
+        })
+        val text5 = findViewById<View>(R.id.password1) as EditText
+        text5.addTextChangedListener(object : TextWatcher {
+            override fun beforeTextChanged(s: CharSequence, start: Int, count: Int, after: Int) {}
+            override fun onTextChanged(s: CharSequence, start: Int, before: Int, count: Int) {}
+            override fun afterTextChanged(s: Editable) {
+                if (!text5.getText().toString().equals("")) {
+                    text5.setBackgroundResource(R.drawable.filled_text_box)
+                    passwordButton.setImageResource(R.drawable.password_button_active)
+                    passwordButton.isClickable = true
+                    passwordButton.isEnabled=true
+                }
+            }
+        })
+        passwordButton.setOnClickListener()
+        {
+            if (passwordButton.isClickable == true) {
+                val inputManager: InputMethodManager =
+                    getSystemService(Context.INPUT_METHOD_SERVICE) as InputMethodManager
+
+                inputManager.hideSoftInputFromWindow(
+                    currentFocus!!.windowToken,
+                    InputMethodManager.HIDE_NOT_ALWAYS
+                )
+                saveButton.setImageResource(R.drawable.password_button_clicked)
+                val handler = Handler()
+                handler.postDelayed({
+                    saveButton.setImageResource(R.drawable.password_button)
+                }, 50)
+                saveButton.isClickable = false
+                saveButton.isEnabled=false
+            }
+        }
+
+
     }
 
 }

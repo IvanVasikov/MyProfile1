@@ -13,6 +13,134 @@
         android:focusableInTouchMode="true"
         tools:context=".MainActivity">
 
+        <TextView
+            android:id="@+id/textView38"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="28dp"
+            android:layout_marginTop="15dp"
+            android:fontFamily="@font/open_sans_bold"
+            android:text="Новый пароль"
+            android:textColor="@color/blue"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textView37" />
+
+        <TextView
+            android:id="@+id/textView39"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="28dp"
+            android:layout_marginTop="15dp"
+            android:fontFamily="@font/open_sans_bold"
+            android:text="Повторите новый пароль"
+            android:textColor="@color/blue"
+            app:layout_constraintStart_toEndOf="@+id/password"
+            app:layout_constraintTop_toBottomOf="@+id/textView37" />
+
+        <TextView
+            android:id="@+id/textView25"
+            android:layout_width="98dp"
+            android:layout_height="18dp"
+            android:layout_marginStart="27dp"
+            android:layout_marginTop="7dp"
+            android:fontFamily="@font/open_sans_condensed_light"
+            android:text="Номер группы: 1111"
+            android:textColor="@color/grey"
+            android:textSize="13sp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textView24" />
+
+        <TextView
+            android:id="@+id/textView26"
+            android:layout_width="133dp"
+            android:layout_height="18dp"
+            android:layout_marginStart="27dp"
+            android:layout_marginTop="7dp"
+            android:fontFamily="@font/open_sans_condensed_light"
+            android:text="Уровень: ВПО-специалисты"
+            android:textColor="@color/grey"
+            android:textSize="13sp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textView25" />
+
+        <TextView
+            android:id="@+id/textView27"
+            android:layout_width="289dp"
+            android:layout_height="15dp"
+            android:layout_marginStart="27dp"
+            android:layout_marginTop="7dp"
+            android:fontFamily="@font/open_sans_condensed_light"
+            android:text="Факультет: Факультет компьютерных технологий и информатики"
+            android:textColor="@color/grey"
+            android:textSize="13sp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textView26" />
+
+        <TextView
+            android:id="@+id/textView29"
+            android:layout_width="46dp"
+            android:layout_height="15dp"
+            android:layout_marginStart="27dp"
+            android:layout_marginTop="7dp"
+            android:fontFamily="@font/open_sans_condensed_light"
+            android:text="Курс: 3"
+            android:textColor="@color/grey"
+            android:textSize="13sp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textView27" />
+
+        <TextView
+            android:id="@+id/textView30"
+            android:layout_width="146dp"
+            android:layout_height="15dp"
+            android:layout_marginStart="27dp"
+            android:layout_marginTop="7dp"
+            android:fontFamily="@font/open_sans_condensed_light"
+            android:text="Форма обучений: Очная форма"
+            android:textColor="@color/grey"
+            android:textSize="13sp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textView29" />
+
+        <TextView
+            android:id="@+id/textView31"
+            android:layout_width="146dp"
+            android:layout_height="15dp"
+            android:layout_marginStart="27dp"
+            android:layout_marginTop="7dp"
+            android:fontFamily="@font/open_sans_condensed_light"
+            android:text="Ист. финансирование: Бюджет"
+            android:textColor="@color/grey"
+            android:textSize="13sp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textView30" />
+
+        <TextView
+            android:id="@+id/textView32"
+            android:layout_width="146dp"
+            android:layout_height="15dp"
+            android:layout_marginStart="27dp"
+            android:layout_marginTop="7dp"
+            android:fontFamily="@font/open_sans_condensed_light"
+            android:text="Начало обучения: дд.мм.гггг"
+            android:textColor="@color/grey"
+            android:textSize="13sp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textView31" />
+
+        <TextView
+            android:id="@+id/textView33"
+            android:layout_width="146dp"
+            android:layout_height="15dp"
+            android:layout_marginStart="27dp"
+            android:layout_marginTop="7dp"
+            android:fontFamily="@font/open_sans_condensed_light"
+            android:text="Конец обучения: дд.мм.гггг"
+            android:textColor="@color/grey"
+            android:textSize="13sp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textView32" />
+
         <ImageView
             android:id="@+id/icon"
             android:layout_width="120dp"
@@ -166,6 +294,58 @@
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/save_button" />
 
+        <View
+            android:id="@+id/line2"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="12dp"
+            android:layout_marginEnd="10dp"
+            android:background="@color/grey"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="1.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/save_button" />
+
+        <View
+            android:id="@+id/line5"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginEnd="10dp"
+            android:background="@color/grey"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="1.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/viewpager" />
+
+        <View
+            android:id="@+id/line6"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginEnd="10dp"
+            android:background="@color/grey"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="1.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textView33" />
+
+        <View
+            android:id="@+id/line7"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="9dp"
+            android:layout_marginEnd="10dp"
+            android:background="@color/grey"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="1.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/save_button2" />
+
         <TextView
             android:id="@+id/mobilePhoneText"
             android:layout_width="wrap_content"
@@ -210,6 +390,78 @@
             tools:ignore="TouchTargetSizeCheck,SpeakableTextPresentCheck" />
 
         <br.com.sapereaude.maskedEditText.MaskedEditText
+            android:id="@+id/mobile_phone_text_box2"
+            android:layout_width="154dp"
+            android:layout_height="39dp"
+            android:layout_marginStart="27dp"
+            android:layout_marginTop="5dp"
+            android:background="@drawable/custom_input"
+            android:ems="10"
+            android:fontFamily="@font/open_sans"
+            android:inputType="number"
+            android:padding="10dp"
+            android:textSize="12sp"
+            app:allowed_chars="1234567890"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/dop_info2"
+            app:mask="#(###)###-##-##"
+            tools:ignore="TouchTargetSizeCheck,SpeakableTextPresentCheck" />
+
+        <br.com.sapereaude.maskedEditText.MaskedEditText
+            android:id="@+id/password"
+            android:layout_width="154dp"
+            android:layout_height="39dp"
+            android:layout_marginStart="27dp"
+            android:layout_marginTop="5dp"
+            android:background="@drawable/custom_input"
+            android:ems="10"
+            android:fontFamily="@font/open_sans"
+            android:inputType="textPassword"
+            android:padding="10dp"
+            android:textSize="12sp"
+            app:allowed_chars="1234567890"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textView38"
+            app:mask="################"
+            tools:ignore="TouchTargetSizeCheck,SpeakableTextPresentCheck" />
+
+        <br.com.sapereaude.maskedEditText.MaskedEditText
+            android:id="@+id/mobile_phone_text_box3"
+            android:layout_width="154dp"
+            android:layout_height="39dp"
+            android:layout_marginStart="28dp"
+            android:layout_marginTop="5dp"
+            android:background="@drawable/custom_input"
+            android:ems="10"
+            android:fontFamily="@font/open_sans"
+            android:inputType="number"
+            android:padding="10dp"
+            android:textSize="12sp"
+            app:allowed_chars="1234567890"
+            app:layout_constraintStart_toEndOf="@+id/mobile_phone_text_box2"
+            app:layout_constraintTop_toBottomOf="@+id/dop_info3"
+            app:mask="#(###)###-##-##"
+            tools:ignore="TouchTargetSizeCheck,SpeakableTextPresentCheck" />
+
+        <br.com.sapereaude.maskedEditText.MaskedEditText
+            android:id="@+id/password1"
+            android:layout_width="154dp"
+            android:layout_height="39dp"
+            android:layout_marginStart="28dp"
+            android:layout_marginTop="5dp"
+            android:background="@drawable/custom_input"
+            android:ems="10"
+            android:fontFamily="@font/open_sans"
+            android:inputType="textPassword"
+            android:padding="10dp"
+            android:textSize="12sp"
+            app:allowed_chars="1234567890"
+            app:layout_constraintStart_toEndOf="@+id/password"
+            app:layout_constraintTop_toBottomOf="@+id/textView39"
+            app:mask="################"
+            tools:ignore="TouchTargetSizeCheck,SpeakableTextPresentCheck" />
+
+        <br.com.sapereaude.maskedEditText.MaskedEditText
             android:id="@+id/russian_mobile_phone_text_box"
             android:layout_width="154dp"
             android:layout_height="39dp"
@@ -238,6 +490,30 @@
             android:textColor="@color/blue"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/mobile_phone_text_box" />
+
+        <TextView
+            android:id="@+id/dop_info2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="28dp"
+            android:layout_marginTop="15dp"
+            android:fontFamily="@font/open_sans_bold"
+            android:text="С"
+            android:textColor="@color/blue"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/checkBox2" />
+
+        <TextView
+            android:id="@+id/dop_info3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="28dp"
+            android:layout_marginTop="15dp"
+            android:fontFamily="@font/open_sans_bold"
+            android:text="По"
+            android:textColor="@color/blue"
+            app:layout_constraintStart_toEndOf="@+id/mobile_phone_text_box2"
+            app:layout_constraintTop_toBottomOf="@+id/checkBox2" />
 
         <EditText
             android:id="@+id/dop_info_textbox"
@@ -279,6 +555,25 @@
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/dop_info_textbox" />
 
+        <CheckBox
+            android:id="@+id/checkBox2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="27dp"
+            android:layout_marginTop="17dp"
+            android:button="@null"
+            android:checked="false"
+            android:drawableStart="@drawable/my_checkbox"
+            android:drawablePadding="6dp"
+            android:fontFamily="@font/open_sans"
+            android:includeFontPadding="false"
+            android:lineSpacingExtra="2dp"
+            android:text="Ограничить время отправки уведомлений"
+            android:textColor="@color/dark_blue_text"
+            android:textSize="13sp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textView35" />
+
         <ImageButton
             android:id="@+id/save_button"
             android:layout_width="wrap_content"
@@ -290,6 +585,33 @@
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/checkBox"
             app:srcCompat="@drawable/save_button"
+            tools:ignore="SpeakableTextPresentCheck,ImageContrastCheck,ImageContrastCheck" />
+
+        <ImageButton
+            android:id="@+id/save_button2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="21dp"
+            android:backgroundTint="#FFFFFF"
+            android:clickable="false"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/mobile_phone_text_box3"
+            app:srcCompat="@drawable/save_button"
+            tools:ignore="SpeakableTextPresentCheck,ImageContrastCheck,ImageContrastCheck" />
+
+        <ImageButton
+            android:id="@+id/password_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="21dp"
+            android:backgroundTint="#FFFFFF"
+            android:clickable="false"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.459"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/password1"
+            app:srcCompat="@drawable/password_button"
             tools:ignore="SpeakableTextPresentCheck,ImageContrastCheck,ImageContrastCheck" />
 
         <TextView
@@ -345,6 +667,81 @@
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/tabs" />
+
+        <TextView
+            android:id="@+id/textView21"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="27dp"
+            android:layout_marginTop="20dp"
+            android:fontFamily="@font/raleway"
+            android:text="Обучение"
+            android:textColor="@color/vp_text_color"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/line5" />
+
+        <TextView
+            android:id="@+id/textView35"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="27dp"
+            android:layout_marginTop="20dp"
+            android:fontFamily="@font/raleway"
+            android:text="Настройка уведомлений"
+            android:textColor="@color/vp_text_color"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/line6" />
+
+        <TextView
+            android:id="@+id/textView37"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="28dp"
+            android:layout_marginTop="20dp"
+            android:fontFamily="@font/raleway"
+            android:text="Смена пароля"
+            android:textColor="@color/vp_text_color"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/line7" />
+
+        <TextView
+            android:id="@+id/textView22"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="27dp"
+            android:layout_marginTop="7dp"
+            android:fontFamily="@font/open_sans_condensed_light"
+            android:text="10.05.01 - Компьютерная безопасность"
+            android:textColor="@color/grey"
+            android:textSize="13sp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textView21" />
+
+        <TextView
+            android:id="@+id/textView23"
+            android:layout_width="319dp"
+            android:layout_height="31dp"
+            android:layout_marginStart="27dp"
+            android:layout_marginTop="7dp"
+            android:fontFamily="@font/open_sans_condensed_light"
+            android:text="Образовательная программа: Информационная безопасность объектов информатизации на базе компьютерных систем"
+            android:textColor="@color/grey"
+            android:textSize="13sp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textView22" />
+
+        <TextView
+            android:id="@+id/textView24"
+            android:layout_width="166dp"
+            android:layout_height="18dp"
+            android:layout_marginStart="27dp"
+            android:layout_marginTop="7dp"
+            android:fontFamily="@font/open_sans_condensed_light"
+            android:text="Номер студенческого билета: 111111"
+            android:textColor="@color/grey"
+            android:textSize="13sp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textView23" />
 
 
     </androidx.constraintlayout.widget.ConstraintLayout>
