@@ -39,6 +39,7 @@ dependencies {
     implementation "org.jetbrains.anko:anko-common:0.9"
     implementation 'com.amitshekhar.android:android-networking:1.0.2'
     implementation 'ru.egslava:MaskedEditText:1.0.5'
+    implementation 'androidx.legacy:legacy-support-v4:1.0.0'
 
     testImplementation 'junit:junit:4.+'
     androidTestImplementation 'androidx.test.ext:junit:1.1.3'

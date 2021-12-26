@@ -153,6 +153,19 @@
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/userID" />
 
+        <View
+            android:id="@+id/line4"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="12dp"
+            android:layout_marginEnd="10dp"
+            android:background="@color/grey"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="1.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/save_button" />
+
         <TextView
             android:id="@+id/mobilePhoneText"
             android:layout_width="wrap_content"
@@ -193,7 +206,8 @@
             app:allowed_chars="1234567890"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/mobilePhoneText"
-            app:mask="#(###)###-##-##" />
+            app:mask="#(###)###-##-##"
+            tools:ignore="TouchTargetSizeCheck,SpeakableTextPresentCheck" />
 
         <br.com.sapereaude.maskedEditText.MaskedEditText
             android:id="@+id/russian_mobile_phone_text_box"
@@ -210,7 +224,8 @@
             app:allowed_chars="1234567890"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/textView2"
-            app:mask="#(###)###-##-##" />
+            app:mask="#(###)###-##-##"
+            tools:ignore="SpeakableTextPresentCheck,TouchTargetSizeCheck" />
 
         <TextView
             android:id="@+id/dop_info"
@@ -242,7 +257,8 @@
             android:scrollHorizontally="false"
             android:textSize="12sp"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/dop_info" />
+            app:layout_constraintTop_toBottomOf="@+id/dop_info"
+            tools:ignore="SpeakableTextPresentCheck" />
 
         <CheckBox
             android:id="@+id/checkBox"
@@ -263,18 +279,72 @@
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/dop_info_textbox" />
 
-        <Button
-            android:id="@+id/button3"
+        <ImageButton
+            android:id="@+id/save_button"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginStart="158dp"
-            android:layout_marginTop="20dp"
-            android:layout_marginEnd="157dp"
-            android:text="Сохранить"
-            android:textColor="@color/black"
+            android:layout_marginTop="19dp"
+            android:backgroundTint="#FFFFFF"
+            android:clickable="false"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/checkBox" />
+            app:layout_constraintTop_toBottomOf="@+id/checkBox"
+            app:srcCompat="@drawable/save_button"
+            tools:ignore="SpeakableTextPresentCheck,ImageContrastCheck,ImageContrastCheck" />
+
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="27dp"
+            android:layout_marginTop="20dp"
+            android:fontFamily="@font/raleway"
+            android:text="Паспортные данные"
+            android:textColor="@color/vp_text_color"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/line4" />
+
+        <com.google.android.material.tabs.TabLayout
+            android:id="@+id/tabs"
+            android:layout_width="320dp"
+            android:layout_height="38dp"
+            android:layout_marginTop="10dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textView"
+            app:tabGravity="fill"
+            app:tabIndicator="@drawable/tablayout"
+            app:tabIndicatorColor="@color/view_pager_color"
+            app:tabIndicatorFullWidth="true"
+            app:tabIndicatorGravity="center"
+            app:tabIndicatorHeight="38dp"
+            app:tabMode="fixed"
+            app:tabTextAppearance="@style/tab_text"
+            app:tabTextColor="@color/vp_text_color">
+
+
+            <com.google.android.material.tabs.TabItem
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Удостоверение личности" />
+
+            <com.google.android.material.tabs.TabItem
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Регистрация" />
+
+
+        </com.google.android.material.tabs.TabLayout>
+
+        <androidx.viewpager2.widget.ViewPager2
+            android:id="@+id/viewpager"
+            android:layout_width="320dp"
+            android:layout_height="380dp"
+            android:background="@drawable/viewpager_custom"
+            android:fadeScrollbars="true"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/tabs" />
 
 
     </androidx.constraintlayout.widget.ConstraintLayout>

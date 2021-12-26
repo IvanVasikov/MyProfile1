@@ -4,27 +4,31 @@ import android.content.Context
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.os.Handler
-import android.util.Log
 import android.view.View;
 import android.widget.EditText
 import androidx.core.content.ContextCompat
 import androidx.appcompat.widget.Toolbar
-import org.jetbrains.anko.doAsync
-import java.net.URL
 
 import android.text.Editable
+import android.text.InputType
 
 import android.text.TextWatcher
-
-
-
+import android.view.inputmethod.InputMethodManager
+import android.widget.ImageButton
+import androidx.viewpager2.widget.ViewPager2
+import com.google.android.material.tabs.TabLayout
+import com.google.android.material.tabs.TabLayoutMediator
 
 
 class MainActivity : AppCompatActivity() {
+    private lateinit var tabLayout: TabLayout
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
         val toolbar = findViewById(R.id.toolbar) as Toolbar
+        val saveButton = findViewById<View>(R.id.save_button) as ImageButton
+        saveButton.isClickable=false
+        saveButton.isEnabled=false
         setSupportActionBar(toolbar)
         toolbar.navigationIcon = ContextCompat.getDrawable(this,R.drawable.back_arrow) //Стрелка "Назад"
         toolbar.setNavigationOnClickListener(View.OnClickListener {
@@ -41,6 +45,9 @@ class MainActivity : AppCompatActivity() {
             override fun afterTextChanged(s: Editable) {
                 if (!text1.getText().toString().equals("")) {
                     text1.setBackgroundResource(R.drawable.filled_text_box)
+                    saveButton.setImageResource(R.drawable.save_button_active)
+                    saveButton.isClickable = true
+                    saveButton.isEnabled=true
                 }
             }
         })
@@ -51,32 +58,62 @@ class MainActivity : AppCompatActivity() {
             override fun afterTextChanged(s: Editable) {
                 if (!text2.getText().toString().equals("")) {
                     text2.setBackgroundResource(R.drawable.filled_text_box)
+                    saveButton.setImageResource(R.drawable.save_button_active)
+                    saveButton.isClickable = true
+                    saveButton.isEnabled=true
                 }
             }
         })
         val text3 = findViewById<View>(R.id.dop_info_textbox) as EditText
-        text1.addTextChangedListener(object : TextWatcher {
+        text3.addTextChangedListener(object : TextWatcher {
             override fun beforeTextChanged(s: CharSequence, start: Int, count: Int, after: Int) {}
             override fun onTextChanged(s: CharSequence, start: Int, before: Int, count: Int) {}
             override fun afterTextChanged(s: Editable) {
                 if (!text3.getText().toString().equals("")) {
                     text3.setBackgroundResource(R.drawable.filled_text_box)
+                    saveButton.setImageResource(R.drawable.save_button_active)
+                    saveButton.isClickable = true
+                    saveButton.isEnabled=true
                 }
             }
         })
 
+        saveButton.setOnClickListener()
+        {
+            if (saveButton.isClickable == true) {
+                val inputManager: InputMethodManager =
+                    getSystemService(Context.INPUT_METHOD_SERVICE) as InputMethodManager
 
+                inputManager.hideSoftInputFromWindow(
+                    currentFocus!!.windowToken,
+                    InputMethodManager.HIDE_NOT_ALWAYS
+                )
+                saveButton.setImageResource(R.drawable.save_button_on_click)
+                val handler = Handler()
+                handler.postDelayed({
+                    saveButton.setImageResource(R.drawable.save_button)
+                }, 50)
+                saveButton.isClickable = false
+                saveButton.isEnabled=false
+            }
+        }
+        val tabLayout = findViewById<TabLayout>(R.id.tabs)
+        val viewPager2 = findViewById<ViewPager2>(R.id.viewpager)
 
+        val adapter = ViewPagerAdapter(supportFragmentManager,lifecycle)
+        viewPager2.adapter=adapter
+
+        TabLayoutMediator(tabLayout,viewPager2){tab,position ->
+            when(position){
+                0 -> {
+                    tab.text = "Удостоверение личности"
+                }
+                1 -> {
+                    tab.text= "Регистрация"
+                }
+            }
+        }.attach()
     }
-
-
-    /*
-    Выход из приложение на кнопку "Назад"
-    override fun onOptionsItemSelected(item: MenuItem): Boolean {
-
-        if(item.itemId == android.R.id.toolbar) finish()
-        return true
-    }
-     */
 
 }
+

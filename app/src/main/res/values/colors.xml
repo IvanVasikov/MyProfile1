@@ -11,4 +11,7 @@
     <color name="textbox_border_color">#F5F5F5</color>
     <color name="textbox_shadow">#80F5F5F5</color>
     <color name="filled_textbox">#E8F0FE</color>
+    <color name="view_pager_color">#0D979797</color>
+    <color name="noteditabletextbox">#4D979797</color>
+    <color name="vp_text_color">#707C97</color>
 </resources>
