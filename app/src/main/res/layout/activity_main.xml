@@ -39,8 +39,8 @@
 
         <TextView
             android:id="@+id/textView25"
-            android:layout_width="98dp"
-            android:layout_height="18dp"
+            android:layout_width="131dp"
+            android:layout_height="21dp"
             android:layout_marginStart="27dp"
             android:layout_marginTop="7dp"
             android:fontFamily="@font/open_sans_condensed_light"
@@ -52,8 +52,8 @@
 
         <TextView
             android:id="@+id/textView26"
-            android:layout_width="133dp"
-            android:layout_height="18dp"
+            android:layout_width="188dp"
+            android:layout_height="22dp"
             android:layout_marginStart="27dp"
             android:layout_marginTop="7dp"
             android:fontFamily="@font/open_sans_condensed_light"
@@ -65,8 +65,8 @@
 
         <TextView
             android:id="@+id/textView27"
-            android:layout_width="289dp"
-            android:layout_height="15dp"
+            android:layout_width="355dp"
+            android:layout_height="32dp"
             android:layout_marginStart="27dp"
             android:layout_marginTop="7dp"
             android:fontFamily="@font/open_sans_condensed_light"
@@ -78,8 +78,8 @@
 
         <TextView
             android:id="@+id/textView29"
-            android:layout_width="46dp"
-            android:layout_height="15dp"
+            android:layout_width="72dp"
+            android:layout_height="21dp"
             android:layout_marginStart="27dp"
             android:layout_marginTop="7dp"
             android:fontFamily="@font/open_sans_condensed_light"
@@ -91,8 +91,8 @@
 
         <TextView
             android:id="@+id/textView30"
-            android:layout_width="146dp"
-            android:layout_height="15dp"
+            android:layout_width="187dp"
+            android:layout_height="20dp"
             android:layout_marginStart="27dp"
             android:layout_marginTop="7dp"
             android:fontFamily="@font/open_sans_condensed_light"
@@ -104,8 +104,8 @@
 
         <TextView
             android:id="@+id/textView31"
-            android:layout_width="146dp"
-            android:layout_height="15dp"
+            android:layout_width="214dp"
+            android:layout_height="23dp"
             android:layout_marginStart="27dp"
             android:layout_marginTop="7dp"
             android:fontFamily="@font/open_sans_condensed_light"
@@ -117,8 +117,8 @@
 
         <TextView
             android:id="@+id/textView32"
-            android:layout_width="146dp"
-            android:layout_height="15dp"
+            android:layout_width="223dp"
+            android:layout_height="24dp"
             android:layout_marginStart="27dp"
             android:layout_marginTop="7dp"
             android:fontFamily="@font/open_sans_condensed_light"
@@ -130,8 +130,8 @@
 
         <TextView
             android:id="@+id/textView33"
-            android:layout_width="146dp"
-            android:layout_height="15dp"
+            android:layout_width="228dp"
+            android:layout_height="39dp"
             android:layout_marginStart="27dp"
             android:layout_marginTop="7dp"
             android:fontFamily="@font/open_sans_condensed_light"
@@ -719,8 +719,8 @@
 
         <TextView
             android:id="@+id/textView23"
-            android:layout_width="319dp"
-            android:layout_height="34dp"
+            android:layout_width="330dp"
+            android:layout_height="38dp"
             android:layout_marginStart="27dp"
             android:layout_marginTop="7dp"
             android:fontFamily="@font/open_sans_condensed_light"
@@ -732,8 +732,8 @@
 
         <TextView
             android:id="@+id/textView24"
-            android:layout_width="166dp"
-            android:layout_height="18dp"
+            android:layout_width="183dp"
+            android:layout_height="21dp"
             android:layout_marginStart="27dp"
             android:layout_marginTop="7dp"
             android:fontFamily="@font/open_sans_condensed_light"
